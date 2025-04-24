@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback System</title>
+    <link rel="stylesheet" href="user feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Feedback</h1>
+        <form action="submit_feedback.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <h2>Feedbacks:</h2>
+        <div id="feedbacks">
+            
+        </div>
+    </div>
+</body>
+</html>
